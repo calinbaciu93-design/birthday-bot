@@ -1,0 +1,22 @@
+{
+  "people": [
+    {
+      "fullName": "Calin Baciu",
+      "age": "32",
+      "gender": "male",
+      "birthday": "1993-11-08"
+    },
+    {
+      "fullName": "Sita Harrison",
+      "age": "27",
+      "gender": "female",
+      "birthday": "1998-08-13"
+    },
+    {
+      "fullName": "John Smith",
+      "age": "33",
+      "gender": "male",
+      "birthday": "1991-02-22"
+    }
+  ]
+}
