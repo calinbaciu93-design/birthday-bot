@@ -18,4 +18,4 @@ jobs:
           node-version: '20'
 
       - name: Run birthday script
-        run: node birthday-bot/birthday.js
+        run: node birthday_bot/birthday.js
