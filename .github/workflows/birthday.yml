@@ -2,7 +2,7 @@ name: Birthday Checker
 
 on:
   schedule:
-    -cron '0 8 * * *' #every day run time
+    - cron: '0 8 * * *' #every day run time
   workflow_dispatch:    #allows for manual run
 
 jobs:
