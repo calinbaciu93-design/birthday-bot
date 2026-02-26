@@ -4,13 +4,13 @@
       "fullName": "Calin Baciu",
       "age": "32",
       "gender": "male",
-      "birthday": "1993-11-08"
+      "birthday": "1993-02-26"
     },
     {
       "fullName": "Sita Harrison",
       "age": "27",
       "gender": "female",
-      "birthday": "1998-08-13"
+      "birthday": "1998-27-02"
     },
     {
       "fullName": "John Smith",
@@ -20,3 +20,4 @@
     }
   ]
 }
+
