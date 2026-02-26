@@ -1,7 +1,10 @@
+const fs = require('fs');
+const path = require('path');
+
 function checkBirthday() {
-  fetch("./database.json")
-    .then((response) => response.json())
-    .then((data) => {
+  const dataPath = path.join(__dirname, 'database.json');
+  const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+                                          
       const today = new Date();
       const todayMonth = today.getMonth();
       const todayDay = today.getDate();
@@ -19,9 +22,10 @@ function checkBirthday() {
         }
       });
       if (birthdayPeople.length > 0) {
-        console.log(`Happy Birthday, ${birthdayPeople}!🎉🥳🎁<br>`);
+        console.log(`Happy Birthday, ${birthdayPeople.join(", ")}!🎉🥳🎁`);
       } else {
         console.log("No birthdays today.");
       }
-    });
 }
+
+checkBirthday();
