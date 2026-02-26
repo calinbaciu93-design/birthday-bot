@@ -1,0 +1,22 @@
+name: Birthday Checker
+
+on:
+  schedule:
+    -cron '08***' #every day run time
+  workflow_dispatch:    #allows for manual run
+
+jobs:
+  run-script: 
+    runs-on: ubuntu latest
+    steps:
+      -name: Checkout repository
+        uses: actions/checkout@v3
+
+      -name: Setud Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      -name: Run birthday script
+        run: node ../../birthday.js
+		
