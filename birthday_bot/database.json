@@ -10,7 +10,7 @@
       "fullName": "Sita Harrison",
       "age": "27",
       "gender": "female",
-      "birthday": "1998-27-02"
+      "birthday": "1998-02-27"
     },
     {
       "fullName": "John Smith",
@@ -20,4 +20,5 @@
     }
   ]
 }
+
 
