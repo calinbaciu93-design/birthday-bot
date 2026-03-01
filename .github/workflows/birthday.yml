@@ -2,7 +2,7 @@ name: Birthday Checker
 
 on:
   schedule:
-    - cron: '07 * * *'
+    - cron: '0 7 * * *'
   workflow_dispatch:
 
 jobs:
