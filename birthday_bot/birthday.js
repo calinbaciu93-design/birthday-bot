@@ -34,6 +34,7 @@ function checkBirthday() {
         })
           .then(message => console.log("Message sent:", message.sid))
           .catch(err => console.log(err));
+        }
       });
       if (birthdayPeople === 0) {
         console.log("No birthdays today.");
