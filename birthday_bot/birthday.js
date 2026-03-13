@@ -1,5 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const twilio = require('twilio');
+
+const accountSid = "ACCOUNT_SID";
+const authToken = "AUTH_TOKEN";
+
+const client = twilio(accountSid, authToken);
 
 function checkBirthday() {
   const dataPath = path.join(__dirname, 'database.json');
@@ -9,7 +15,7 @@ function checkBirthday() {
       const todayMonth = today.getMonth();
       const todayDay = today.getDate();
 
-      let birthdayPeople = [];
+      let birthdayPeople = 0;
 
       data.people.forEach((person) => {
         const birthday = new Date(person.birthday);
@@ -18,12 +24,18 @@ function checkBirthday() {
           birthday.getMonth() === todayMonth &&
           birthday.getDate() === todayDay
         ) {
-          birthdayPeople.push(person.fullName);
-        }
+          birthdayPeople++;
+          console.log(`Happy Birthday, ${person.fullName}!`);
+          
+          client.messages.create({
+            body: `Happy Birthday, ${person.fullName}!`,
+            from: "TWILIO_NUMBER",
+            to: person.phone
+        })
+          .then(message => console.log("Message sent:", message.sid))
+          .catch(err => console.log(err));
       });
-      if (birthdayPeople.length > 0) {
-        console.log(`Happy Birthday, ${birthdayPeople.join(", ")}!🎉🥳🎁`);
-      } else {
+      if (birthdayPeople === 0) {
         console.log("No birthdays today.");
       }
 }
