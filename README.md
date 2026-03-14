@@ -33,14 +33,21 @@ This project was built as a small automation exercise and can be extended for re
 birthday-bot/
 
 │
+
 ├── birthdayBot.js
+
 ├── database.json
+
 └── README.md
 
 Example database.json structure:
 
+
 {
-  "people": [
+  
+  "people": 
+  [
+    
     {
       "fullName": "John Smith",
       "birthday": "1998-05-22",
