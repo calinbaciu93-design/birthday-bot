@@ -6,27 +6,28 @@ The script reads a local database.json file, compares each stored birthday with 
 
 This project was built as a small automation exercise and can be extended for reminders, scheduled messages, or larger notification systems.
 
+
 🚀 Features
 
-Reads birthday data from a JSON database
+1. Reads birthday data from a JSON database
 
-Automatically detects birthdays based on the current date
+2. Automatically detects birthdays based on the current date
 
-Sends SMS messages using Twilio API
+3. Sends SMS messages using Twilio API
 
-Logs successful messages and errors
+4. Logs successful messages and errors
 
-Displays a message if there are no birthdays today
+5. Displays a message if there are no birthdays today
 
 🛠 Technologies Used
 
-Node.js
+- Node.js
 
-Twilio SMS API
+- Twilio SMS API
 
-JavaScript
+- JavaScript
 
-JSON database
+- JSON database
 
 📁 Project Structure
 birthday-bot/
