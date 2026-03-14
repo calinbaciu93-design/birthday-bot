@@ -29,7 +29,7 @@ function checkBirthday() {
           
           client.messages.create({
             body: `Happy Birthday, ${person.fullName}!`,
-            from: "TWILIO_NUMBER",
+            from: process.env.TWILIO_NUMBER,
             to: person.phone
         })
           .then(message => console.log("Message sent:", message.sid))
