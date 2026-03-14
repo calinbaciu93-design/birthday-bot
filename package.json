@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "birthday_bot/birthday.js",
-  "dependendencies": {
+  "dependencies": {
     "twilio": "^5.13.0"
   }
   "scripts": {
