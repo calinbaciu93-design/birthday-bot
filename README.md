@@ -1,56 +1,49 @@
-#🎂 Birthday SMS Bot
+# 🎂 Birthday SMS Bot
 
-A simple Node.js automation script that checks a list of people and automatically sends them a birthday SMS using Twilio.
+A simple **Node.js automation script** that checks a list of people and automatically sends them a birthday SMS using the Twilio API.
 
-The script reads a local database.json file, compares each stored birthday with today's date, and sends a personalized birthday message when a match is found.
+The script reads a local `database.json` file, compares each stored birthday with today's date, and sends a personalized birthday message when a match is found.
 
 This project was built as a small automation exercise and can be extended for reminders, scheduled messages, or larger notification systems.
 
+---
 
-#🚀 Features
+## 🚀 Features
 
-1. Reads birthday data from a JSON database
+* Reads birthday data from a JSON database
+* Automatically detects birthdays based on the current date
+* Sends SMS messages using the Twilio API
+* Logs successful messages and errors
+* Displays a message if there are no birthdays today
 
-2. Automatically detects birthdays based on the current date
+---
 
-3. Sends SMS messages using Twilio API
+## 🛠 Technologies Used
 
-4. Logs successful messages and errors
+* Node.js
+* Twilio SMS API
+* JavaScript
+* JSON database
 
-5. Displays a message if there are no birthdays today
+---
 
+## 📁 Project Structure
 
-#🛠 Technologies Used
+```
+birthday-bot/
+│
+├── birthdayBot.js
+├── database.json
+└── README.md
+```
 
-- Node.js
+---
 
-- Twilio SMS API
+## 📄 Example `database.json` Structure
 
-- JavaScript
-
-- JSON database
-
-
-#📁 Project Structure
-
-
-birthday-bot/│
-            
-            ├── birthdayBot.js
-            
-            ├── database.json
-            
-            └── README.md
-
-
-Example database.json structure:
-
-
-
+```json
 {
-  "people": 
-  [
-    
+  "people": [
     {
       "fullName": "John Smith",
       "birthday": "1998-05-22",
@@ -58,63 +51,76 @@ Example database.json structure:
     }
   ]
 }
+```
 
-#⚙️ Setup
+---
 
-1. Clone the repository
-    git clone https://github.com/yourusername/birthday-bot.git
-    cd birthday-bot
+## ⚙️ Setup
 
-2. Install dependencies
-    npm install twilio
+### 1. Clone the repository
 
-3. Configure Twilio credentials
+```
+git clone https://github.com/yourusername/birthday-bot.git
+cd birthday-bot
+```
 
-4. Replace the placeholders in the script with your Twilio details:
+### 2. Install dependencies
 
+```
+npm install twilio
+```
 
+### 3. Configure Twilio credentials
+
+Replace the placeholders in the script with your Twilio details:
+
+```javascript
 const accountSid = "ACCOUNT_SID";
-
 const authToken = "AUTH_TOKEN";
-
 const twilioNumber = "TWILIO_NUMBER";
+```
 
 You can obtain these from your Twilio dashboard.
 
+---
 
-#▶️ Running the Script
+## ▶️ Running the Script
 
 Run the script with:
 
-1. node birthdayBot.js
+```
+node birthdayBot.js
+```
 
-2. The program will:
+The program will:
 
-3. Read the database.json
+1. Read the `database.json`
+2. Check if any birthdays match today's date
+3. Send SMS messages to those people
 
-4. Check if any birthdays match today's date
+---
 
-5. Send SMS messages to those people
-
-
-#⏰ Automation (Optional)
+## ⏰ Automation (Optional)
 
 This script can easily be automated using:
 
-- GitHub Actions
+* GitHub Actions
+* Cron jobs
+* Cloud schedulers
 
-- Cron jobs
+For example, running it **once per day** to automatically send birthday messages.
 
-- Cloud schedulers
+---
 
-For example, running it once per day to automatically send birthday messages.
+## 📌 Example Output
 
-#📌 Example Output
-
+```
 Happy Birthday, John Smith!
-
 Message sent: SMXXXXXXXXXXXXXXXX
+```
 
 Or if there are no birthdays:
 
+```
 No birthdays today.
+```
