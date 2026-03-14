@@ -31,6 +31,7 @@ This project was built as a small automation exercise and can be extended for re
 
 📁 Project Structure
 birthday-bot/
+
 │
 ├── birthdayBot.js
 ├── database.json
