@@ -36,11 +36,11 @@ This project was built as a small automation exercise and can be extended for re
 
 birthday-bot/│
 
-├── birthdayBot.js
+            ├── birthdayBot.js
 
-├── database.json
+            ├── database.json
 
-└── README.md
+            └── README.md
 
 
 Example database.json structure:
