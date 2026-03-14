@@ -5,7 +5,7 @@
   "main": "birthday_bot/birthday.js",
   "dependencies": {
     "twilio": "^5.13.0"
-  }
+  },
   "scripts": {
     "start": "node birthday_bot/birthday.js",
     "test": "echo \"Error: no test specified\" && exit 1"
