@@ -35,11 +35,8 @@ This project was built as a small automation exercise and can be extended for re
 
 
 birthday-bot/│
-
             ├── birthdayBot.js
-
             ├── database.json
-
             └── README.md
 
 
