@@ -1,4 +1,4 @@
-🎂 Birthday SMS Bot
+#🎂 Birthday SMS Bot
 
 A simple Node.js automation script that checks a list of people and automatically sends them a birthday SMS using Twilio.
 
@@ -7,7 +7,7 @@ The script reads a local database.json file, compares each stored birthday with 
 This project was built as a small automation exercise and can be extended for reminders, scheduled messages, or larger notification systems.
 
 
-🚀 Features
+#🚀 Features
 
 1. Reads birthday data from a JSON database
 
@@ -20,7 +20,7 @@ This project was built as a small automation exercise and can be extended for re
 5. Displays a message if there are no birthdays today
 
 
-🛠 Technologies Used
+#🛠 Technologies Used
 
 - Node.js
 
@@ -31,7 +31,7 @@ This project was built as a small automation exercise and can be extended for re
 - JSON database
 
 
-📁 Project Structure
+#📁 Project Structure
 
 
 birthday-bot/│
@@ -59,7 +59,7 @@ Example database.json structure:
   ]
 }
 
-⚙️ Setup
+#⚙️ Setup
 
 1. Clone the repository
     git clone https://github.com/yourusername/birthday-bot.git
@@ -82,7 +82,7 @@ const twilioNumber = "TWILIO_NUMBER";
 You can obtain these from your Twilio dashboard.
 
 
-▶️ Running the Script
+#▶️ Running the Script
 
 Run the script with:
 
@@ -97,7 +97,7 @@ Run the script with:
 5. Send SMS messages to those people
 
 
-⏰ Automation (Optional)
+#⏰ Automation (Optional)
 
 This script can easily be automated using:
 
@@ -109,7 +109,7 @@ This script can easily be automated using:
 
 For example, running it once per day to automatically send birthday messages.
 
-📌 Example Output
+#📌 Example Output
 
 Happy Birthday, John Smith!
 
