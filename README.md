@@ -30,9 +30,8 @@ This project was built as a small automation exercise and can be extended for re
 - JSON database
 
 📁 Project Structure
-birthday-bot/
 
-│
+birthday-bot/│
 
 ├── birthdayBot.js
 
@@ -43,8 +42,8 @@ birthday-bot/
 Example database.json structure:
 
 
+
 {
-  
   "people": 
   [
     
@@ -55,15 +54,20 @@ Example database.json structure:
     }
   ]
 }
+
 ⚙️ Setup
+
 1. Clone the repository
-git clone https://github.com/yourusername/birthday-bot.git
-cd birthday-bot
+    git clone https://github.com/yourusername/birthday-bot.git
+    cd birthday-bot
+
 2. Install dependencies
-npm install twilio
+    npm install twilio
+
 3. Configure Twilio credentials
 
 Replace the placeholders in the script with your Twilio details:
+
 
 const accountSid = "ACCOUNT_SID";
 const authToken = "AUTH_TOKEN";
