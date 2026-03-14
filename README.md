@@ -19,6 +19,7 @@ This project was built as a small automation exercise and can be extended for re
 
 5. Displays a message if there are no birthdays today
 
+
 🛠 Technologies Used
 
 - Node.js
@@ -29,7 +30,9 @@ This project was built as a small automation exercise and can be extended for re
 
 - JSON database
 
+
 📁 Project Structure
+
 
 birthday-bot/│
 
@@ -38,6 +41,7 @@ birthday-bot/│
 ├── database.json
 
 └── README.md
+
 
 Example database.json structure:
 
@@ -66,43 +70,49 @@ Example database.json structure:
 
 3. Configure Twilio credentials
 
-Replace the placeholders in the script with your Twilio details:
+4. Replace the placeholders in the script with your Twilio details:
 
 
 const accountSid = "ACCOUNT_SID";
+
 const authToken = "AUTH_TOKEN";
+
 const twilioNumber = "TWILIO_NUMBER";
 
 You can obtain these from your Twilio dashboard.
+
 
 ▶️ Running the Script
 
 Run the script with:
 
-node birthdayBot.js
+1. node birthdayBot.js
 
-The program will:
+2. The program will:
 
-Read the database.json
+3. Read the database.json
 
-Check if any birthdays match today's date
+4. Check if any birthdays match today's date
 
-Send SMS messages to those people
+5. Send SMS messages to those people
+
 
 ⏰ Automation (Optional)
 
 This script can easily be automated using:
 
-GitHub Actions
+- GitHub Actions
 
-Cron jobs
+- Cron jobs
 
-Cloud schedulers
+- Cloud schedulers
 
 For example, running it once per day to automatically send birthday messages.
 
 📌 Example Output
+
 Happy Birthday, John Smith!
+
 Message sent: SMXXXXXXXXXXXXXXXX
 
 Or if there are no birthdays:
