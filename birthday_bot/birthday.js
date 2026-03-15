@@ -4,6 +4,7 @@ const twilio = require('twilio');
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
+const twilioNumber = process.env.TWILIO_NUMBER;
 
 const client = twilio(accountSid, authToken);
 
@@ -29,7 +30,7 @@ function checkBirthday() {
           
           client.messages.create({
             body: `Happy Birthday, ${person.fullName}!`,
-            from: process.env.TWILIO_NUMBER,
+            from: twilioNumber,
             to: person.phone
         })
           .then(message => console.log("Message sent:", message.sid))
