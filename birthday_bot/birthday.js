@@ -28,19 +28,14 @@ function checkBirthday() {
           birthdayPeople++;
           console.log(`Happy Birthday, ${person.fullName}!`);
           
-          client.calls.create({
-            to: person.phone,
+          client.messages.create({
+            body: `Happy Birthday, ${person.fullName}!`,
             from: twilioNumber,
-            twiml: `
-              <Response>
-                <Say voice="alice" language="en-US">
-                  Happy Birthday, ${person.fullName}! Say hello to Sita for me!
-                </Say>
-              </Response>
-            `
+            to: person.phone
         })
-          .then(call => console.log("Call initiated:", call.sid))
-          .catch(err => console.log("Call error:", err));
+          .then(message => console.log("Message sent:", message.sid))
+          .catch(err => console.log(err));
+        }
         }
       });
 
