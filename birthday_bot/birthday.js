@@ -29,7 +29,7 @@ function checkBirthday() {
           console.log(`Happy Birthday, ${person.fullName}!`);
           
           client.calls.create({
-            to: person.phone
+            to: person.phone,
             from: twilioNumber,
             twiml: `
               <Response>
