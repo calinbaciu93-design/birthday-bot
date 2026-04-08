@@ -34,7 +34,7 @@ function checkBirthday() {
             twiml: `
               <Response>
                 <Say voice="alice" language="en-US">
-                  Happy Birthday, ${person.fullName}! Say hello to Sita for me!
+                  Happy Birthday, ${person.fullName}! Have a good one!
                 </Say>
               </Response>
             `
