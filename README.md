@@ -82,7 +82,7 @@ const twilioNumber = "TWILIO_NUMBER";
 
 You can obtain these from your Twilio dashboard.
 
-Also, replace the placeholders from the ```.create ``` section to reflect your own message and what you want your receiver to see displayed as incoming caller ID. 
+Also, replace the placeholders from the ```client.messages.create ``` section to reflect your own message and what you want your receiver to see displayed as incoming caller ID. 
 
 ---
 
