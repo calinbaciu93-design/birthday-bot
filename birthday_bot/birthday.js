@@ -28,7 +28,7 @@ function checkBirthday() {
       client.messages
         .create({
           body: `Happy Birthday, ${person.fullName}! Have a good one!`,
-          from: twilioNumber,
+          from: "Your Name",
           to: person.phone,
         })
 
